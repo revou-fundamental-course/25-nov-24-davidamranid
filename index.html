@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Judul Website -->
-    <header>
-        <h1>Kalkulator BMi</h1>
+    <header class="main-header">
+      <h1>Kalkulator BMi</h1>
     </header>
 
-    <!-- konten Website -->
-    <main></main>
-    
+    <!-- Konten Website -->
+    <main>
+      <!-- Section Form Kalkulator BMI -->
+      <section class="main-section">
+        <!-- Main Article -->
+        <article>
+          <p>Lorem ipsum dolor sit  class="form-item"amet consectetur.</p>
+        </article>
+
+        <!-- Main Form -->
+        <form>
+          <div class="form-item">
+            <label for="berat-badan-input"> Berat Badan (kg): </label>
+            <input type="number" id="berat-badan-input" />
+          </div>
+          <div class="form-item">
+            <label for="usia-input"> Usia (tahun): </label>
+            <input type="number" id="usia-input " />
+          </div>
+          <div class="form-item">
+            <label for="tinggi-badan-input"> Tinggi Badan (cm): </label>
+            <input type="number" id="tinggi-badan-input" />
+          </div>
+          <div class="form-button-container">
+            <button class="bg-cadet-blue color-antique-white">Hitung BMI</button>
+            <button class="bg-alice-blue">Reset</button>
+          </div>
+        </form>
+        <article>
+          <header>
+            <h2>Keunggulan Fitur</h2>
+          </header>
+
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+      </section>
+      <!-- Section Hasil Kalkulasi -->
+      <section class="main-section">
+        <div>
+          <header>
+            <h2>Hasil</h2>
+          </header>
+          <p>Berat Badan Lebih</p>
+          <div id="result-calculation">0</div>
+          <p id="info-result">Anda memiliki berat badan ??</p>
+        </div>
+        <!-- Third Articel -->
+        <article>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+      </section>
+    </main>
+
     <!-- Footer Website -->
-     <footer>
-        <p>Made by David@2024</p>
-     </footer>
-</body>
+    <footer>
+      <p>Made by David@2024</p>
+    </footer>
+  </body>
 </html>
