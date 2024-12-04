@@ -1,57 +1,194 @@
-/* ini File CSS */
+/* =======================================
+   Style CSS
+======================================== */
+
+/* Main Header */
 .main-header {
   text-align: center;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
+/* Main Content  */
 main {
   display: flex;
   justify-content: space-evenly;
+  gap: 20px; 
+}
+
+.main-section,
+.result-section {
+  width: 48%; 
 }
 
 footer {
   text-align: center;
+  margin-top: 20px;
 }
+
+/* Heading  */
+h2 {
+  font-size: large;
+  color: #333; 
+}
+
+/* =======================================
+   Form Css
+======================================== */
 
 form {
   background-color: antiquewhite;
   padding: 16px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
+/* Form Item  */
 .form-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 
+/* Input  */
 input[type="number"],
 select {
-  width: 40%;
+  width: 100%; 
+  max-width: 250px; 
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
+/* Inputs */
+input[type="number"]:focus,
+select:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.8); 
+}
+
+/* Article */
+p{
+  font-size: large;
+}
+
+/* Button Container */
 .form-button-container {
   margin-top: 32px;
+  text-align: center;
 }
 
+/* Buttons */
 button {
   border: 0;
-  padding: 8px;
+  padding: 10px 20px;
   border-radius: 4px;
+  background-color: cadetblue;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+/* Button Hover  */
+button:hover {
+  background-color: #5a7d7f; 
+}
+
+button:active {
+  background-color: #406060; 
+}
+
+/* =======================================
+   Background Color 
+======================================== */
 .bg-cadet-blue {
   background-color: cadetblue;
 }
 
-.bg-alice-blue{
+.bg-alice-blue {
   background-color: aliceblue;
 }
 
 .color-antique-white {
   color: antiquewhite;
+}
+
+/* =======================================
+   Result Section css
+======================================== */
+
+.form-hasil {
+  background-color: antiquewhite;
+  padding: 16px;
+  border-radius: 8px;
+  margin-left: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =======================================
+   Responsive
+======================================== */
+
+/* Mobile First Design (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main-section,
+  .result-section {
+    width: 100%; 
+  }
+
+  /* mobile */
+  h2 {
+    font-size: 18px;
+  }
+
+  .form-item {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  input[type="number"],
+  select {
+    width: 100%; 
+  }
+
+  /* button size */
+  button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet Screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  main{
+    flex-direction: column;
+  }
+
+  .main-section,
+  .result-section {
+    width: 100%; 
+  }
+
+  h2 {
+    font-size: 20px; 
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
 }
